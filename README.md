@@ -16,7 +16,7 @@ curl https://iplab.dmi.unict.it/sharing/rulstm/features/rgb/data.mdb -o data/ek5
 The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
 
 # Clarifications
-Markup: * The CSV format is different in training.csv and test_seen.csv
+Markup : * The CSV format is different in training.csv and test_seen.csv
           * For training.csv, the columns are - segment_id, video_id, start_frame, end_frame, verb, noun, action
           * For test_seen.csv, the columns are - segment_id, video_id, start_frame, end_frame
 
