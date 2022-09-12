@@ -696,7 +696,7 @@ frame_rate = 30 # tsn features calculated @ 10fps
 writer = SummaryWriter('runs/epic_action_max_{:1.1f}x{:d}'.format(seg_length_sec, obs_seg))
 nepochs = 20
 
-anticipation_model = VerbAnticipator(feature_dim, goal_smoothness, goal_closeness, hidden_size)
+anticipation_model = Anticipator(feature_dim, goal_smoothness, goal_closeness, hidden_size)
 ckpt_path = 'ckpt/tsnrgb_action_latent_goal_{:1.1f}sx{:d}_obs_max_current_action.pt'.format(seg_length_sec, obs_seg)
 # ckpt_path = 'ckpt/tsnrgb_verb_latent_goal_{:1.1f}sx{:d}_obs_max_hidden{:d}.pt'.format(seg_length_sec, obs_seg, hidden_size)
 
