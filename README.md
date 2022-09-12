@@ -1,4 +1,4 @@
-# LatentGoal
+# Action Anticipation using Latent Goal Learning
 Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent goal learning"](https://openaccess.thecvf.com/content/WACV2022/papers/Roy_Action_Anticipation_Using_Latent_Goal_Learning_WACV_2022_paper.pdf)
 
 # Features
