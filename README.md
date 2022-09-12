@@ -2,18 +2,21 @@
 Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent goal learning"](https://openaccess.thecvf.com/content/WACV2022/papers/Roy_Action_Anticipation_Using_Latent_Goal_Learning_WACV_2022_paper.pdf)
 
 # EPIC-KITCHENS 55
-Download RGB features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
+* For training the verb anticipation network
 
-https://github.com/fpv-iplab/rulstm/blob/master/RULSTM/scripts/download_data_ek55.sh
+  Download RGB features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
 
-and these lines
+  https://github.com/fpv-iplab/rulstm/blob/master/RULSTM/scripts/download_data_ek55.sh
 
-```
-mkdir -p data/ek55/rgb
-curl https://iplab.dmi.unict.it/sharing/rulstm/features/rgb/data.mdb -o data/ek55/rgb/data.mdb
-```
+  and these lines
 
-The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
+  ```
+  mkdir -p data/ek55/rgb
+  curl https://iplab.dmi.unict.it/sharing/rulstm/features/rgb/data.mdb -o data/ek55/rgb/data.mdb
+  ```
+
+  The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
+
 
 # Breakfast and 50 Salads
 
