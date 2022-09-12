@@ -144,9 +144,9 @@ class BeamSearchNode(object):
         return self.score > nxt.score
                 
     
-class VerbAnticipator(nn.Module):
+class Anticipator(nn.Module):
     def __init__(self, feature_dim, goal_smoothness, goal_closeness, hidden_size):
-        super(VerbAnticipator, self).__init__()
+        super(Anticipator, self).__init__()
         
         self.hidden_size = hidden_size
         #self.goalpredictor = GoalPredictor()
