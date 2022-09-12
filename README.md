@@ -49,6 +49,13 @@ Then run [i3d_latent_goal_bf.py]
 
 We have actions instead of verb and nouns for Breakfast and 50Salads.
 
+# Acknowledgment
+
+This research/project is supported in part by the National Research Foundation, Singapore under its AI Singapore Program (AISG Award No: AISG2-RP-2020-016) and the National Research Foundation Singapore under its AI Singapore Program (Award Number: AISG-RP-2019-010).
+
+  
+In case of issues, please write to roy_debaditya [at] ihpc [dot] a-star [dot] edu [dot] sg
+
 Please cite this work if you use this code
 
 ```
@@ -60,9 +67,3 @@ booktitle={WACV},
 year={2022},
 }
 ```
-# Acknowledgment
-
-This research/project is supported in part by the National Research Foundation, Singapore under its AI Singapore Program (AISG Award No: AISG2-RP-2020-016) and the National Research Foundation Singapore under its AI Singapore Program (Award Number: AISG-RP-2019-010).
-
-  
-In case of issues, please write to roy_debaditya [at] ihpc [dot] a-star [dot] edu [dot] sg
