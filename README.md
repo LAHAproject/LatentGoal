@@ -23,11 +23,12 @@ https://github.com/yabufarha/ms-tcn
 
 Download the [data](https://mega.nz/#!O6wXlSTS!wcEoDT4Ctq5HRq_hV-aWeVF1_JB3cacQBQqOLjCIbc8) folder, which contains the features and the ground truth labels. (~30GB) (If you cannot download the data from the previous link, try to download it from [here](https://zenodo.org/record/3625992#.Xiv9jGhKhPY))
 
-
+Then run [i3d_latent_goal_bf.py]
+(https://github.com/debadityaroy/LatentGoal/blob/main/i3d_latent_goal_bf.py)
 
 # Clarifications
 * The CSV format is different in *training.csv* and *test_seen.csv*. For *training.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame, verb, noun, action``` For *test_seen.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame```
-* 
+* We have actions instead of verb and nouns for Breakfast and 50Salads.
 
 Please cite this work if you use this code
 
