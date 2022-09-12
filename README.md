@@ -17,8 +17,8 @@ The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *vali
 
 # Clarifications
 * The CSV format is different in training.csv and test_seen.csv
-          * For training.csv, the columns are - segment_id, video_id, start_frame, end_frame, verb, noun, action
-          * For test_seen.csv, the columns are - segment_id, video_id, start_frame, end_frame
+         * For training.csv, the columns are - segment_id, video_id, start_frame, end_frame, verb, noun, action
+         * For test_seen.csv, the columns are - segment_id, video_id, start_frame, end_frame
 
 You are all set to run the code. Please cite this work if you use this code
 
