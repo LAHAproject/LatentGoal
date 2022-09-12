@@ -17,6 +17,21 @@ Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent go
 
   The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
 
+  * For training the noun anticipation network
+   Download OBJ features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
+
+  https://github.com/fpv-iplab/rulstm/blob/master/RULSTM/scripts/download_data_ek55.sh
+
+  and these lines
+
+  ```
+  mkdir -p data/ek55/rgb
+  curl https://iplab.dmi.unict.it/sharing/rulstm/features/obj/data.mdb -o data/ek55/obj/data.mdb
+  ```
+
+  The data is now in <pwd>/data/ek55/obj. 
+  
+  
 
 # Breakfast and 50 Salads
 
