@@ -21,7 +21,9 @@ I3D features were obtained from this repo for both 50Salads and Breakfast.
 
 https://github.com/yabufarha/ms-tcn
 
-Download the data folder, which contains the features and the ground truth labels. (~30GB) (If you cannot download the data from the previous link, try to download it from here)
+Download the [data](https://mega.nz/#!O6wXlSTS!wcEoDT4Ctq5HRq_hV-aWeVF1_JB3cacQBQqOLjCIbc8) folder, which contains the features and the ground truth labels. (~30GB) (If you cannot download the data from the previous link, try to download it from [here](https://zenodo.org/record/3625992#.Xiv9jGhKhPY))
+
+
 
 # Clarifications
 * The CSV format is different in *training.csv* and *test_seen.csv*. For *training.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame, verb, noun, action``` For *test_seen.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame```
