@@ -14,7 +14,7 @@ curl https://iplab.dmi.unict.it/sharing/rulstm/features/rgb/data.mdb -o data/ek5
 ```
 
 The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
-  
+
 You are all set to run the code. Please cite this work if you use this code
 
 ```
@@ -26,5 +26,9 @@ booktitle={WACV},
 year={2022},
 }
 ```
+# Acknowledgment
+
+This research/project is supported in part by the National Research Foundation, Singapore under its AI Singapore Program (AISG Award No: AISG2-RP-2020-016) and the National Research Foundation Singapore under its AI Singapore Program (Award Number: AISG-RP-2019-010).
+
   
 In case of issues, please write to roy_debaditya [at] ihpc [dot] a-star [dot] edu [dot] sg
