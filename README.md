@@ -1,7 +1,7 @@
 # Action Anticipation using Latent Goal Learning
 Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent goal learning"](https://openaccess.thecvf.com/content/WACV2022/papers/Roy_Action_Anticipation_Using_Latent_Goal_Learning_WACV_2022_paper.pdf)
 
-# Features
+# EPIC-KITCHENS 55
 Download RGB features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
 
 https://github.com/fpv-iplab/rulstm/blob/master/RULSTM/scripts/download_data_ek55.sh
@@ -15,10 +15,19 @@ curl https://iplab.dmi.unict.it/sharing/rulstm/features/rgb/data.mdb -o data/ek5
 
 The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
 
+# Breakfast and 50 Salads
+
+I3D features were obtained from this repo for both 50Salads and Breakfast.
+
+https://github.com/yabufarha/ms-tcn
+
+Download the data folder, which contains the features and the ground truth labels. (~30GB) (If you cannot download the data from the previous link, try to download it from here)
+
 # Clarifications
 * The CSV format is different in *training.csv* and *test_seen.csv*. For *training.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame, verb, noun, action``` For *test_seen.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame```
 * 
-You are all set to run the code. Please cite this work if you use this code
+
+Please cite this work if you use this code
 
 ```
 @inproceedings{
