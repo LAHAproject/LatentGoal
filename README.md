@@ -2,7 +2,7 @@
 Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent goal learning"](https://openaccess.thecvf.com/content/WACV2022/papers/Roy_Action_Anticipation_Using_Latent_Goal_Learning_WACV_2022_paper.pdf)
 
 # EPIC-KITCHENS 55
-* For training the verb anticipation network
+* Training
 
   Download RGB features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
 
@@ -17,23 +17,23 @@ Code accompanying the IEEE WACV 2022 paper ["Action anticipation using latent go
 
   The data is now in <pwd>/data/ek55/rgb. Next, fetch the *training.csv* and *validation.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
 
-  Run the *training script - *tsnrgb_feat_latent_goal_action_max_current_action.py*
-* For training the noun anticipation network
+  Run the training script - *tsnrgb_feat_latent_goal_action_max_current_action.py*
+
+* Testing on test set
   
-  Download OBJ features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
+  * Fetch the *test_seen.csv* and *test_unseen.csv* from the RULSTM project [ek55 directory](https://github.com/fpv-iplab/rulstm/tree/master/RULSTM/data/ek55)
+  
+  * The CSV format is different in *training.csv* and *test_seen.csv*. For *training.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame, verb, noun, action``` For *test_seen/unseen.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame```
+  
+  * We need to train 2 models - one with RGB features as above and another with OBJ features
+    Download OBJ features from [RULSTM](https://github.com/fpv-iplab/rulstm) project, specifically this script
+    ```
+    mkdir -p data/ek55/obj
+    curl https://iplab.dmi.unict.it/sharing/rulstm/features/obj/data.mdb -o data/ek55/obj/data.mdb
+    ```
+    The data is now in <pwd>/data/ek55/obj. 
 
-  https://github.com/fpv-iplab/rulstm/blob/master/RULSTM/scripts/download_data_ek55.sh
-
-  and these lines
-
-  ```
-  mkdir -p data/ek55/rgb
-  curl https://iplab.dmi.unict.it/sharing/rulstm/features/obj/data.mdb -o data/ek55/obj/data.mdb
-  ```
-
-  The data is now in <pwd>/data/ek55/obj. 
-
-  Run the *training script - *tsnrgb_feat_latent_goal_action_max_current_action.py*. Make appropriate changes to feature directory, feature dimension and output dimension.
+  Run the training script *tsnrgb_feat_latent_goal_action_max_current_action.py*. Change ```feat_dim``` in ```main()```  to 352
 
 
 # Breakfast and 50 Salads
@@ -47,9 +47,7 @@ Download the [data](https://mega.nz/#!O6wXlSTS!wcEoDT4Ctq5HRq_hV-aWeVF1_JB3cacQB
 Then run [i3d_latent_goal_bf.py]
 (https://github.com/debadityaroy/LatentGoal/blob/main/i3d_latent_goal_bf.py)
 
-# Clarifications
-* The CSV format is different in *training.csv* and *test_seen.csv*. For *training.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame, verb, noun, action``` For *test_seen.csv*, the columns are - ```segment_id, video_id, start_frame, end_frame```
-* We have actions instead of verb and nouns for Breakfast and 50Salads.
+We have actions instead of verb and nouns for Breakfast and 50Salads.
 
 Please cite this work if you use this code
 
